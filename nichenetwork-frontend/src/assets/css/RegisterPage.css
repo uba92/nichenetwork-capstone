@@ -1,0 +1,23 @@
+.btn-custom {
+  background-color: #ffcc00;
+  color: #222;
+  font-size: large;
+  border: none;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-custom:hover {
+  background-color: #ffcc00;
+  color: #222;
+  font-size: large;
+  border: none;
+  transform: translateY(-5px);
+}
+
+.register-container {
+  text-align: center;
+  background-color: #222;
+  color: rgb(247, 236, 236);
+  padding: 2rem;
+}

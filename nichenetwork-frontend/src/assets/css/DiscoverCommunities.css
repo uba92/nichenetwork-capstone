@@ -1,0 +1,96 @@
+.discover-communities-container {
+  background-color: #222;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.search-community-input::placeholder {
+  color: whitesmoke;
+}
+
+.custom-discover-community-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-discover-community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.custom-discover-community-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+}
+
+.discover-community-card-overlay-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  color: #fff;
+  padding: 16px;
+}
+
+.discover-community-card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.discover-community-card-description {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  text-overflow: ellipsis;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.div-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.div-dots div {
+  width: 6px;
+  height: 6px;
+  background-color: gray;
+  border-radius: 50%;
+  opacity: 0.6;
+}

@@ -1,0 +1,75 @@
+.landing-container {
+  text-align: center;
+  background-color: #222;
+  color: rgb(247, 236, 236);
+  min-height: 100vh;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.landing-sub {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (max-width: 576px) {
+  .landing-title {
+    font-size: 2.5rem;
+  }
+
+  .landing-sub {
+    font-size: 1.2rem;
+  }
+
+  .landing-button {
+    font-size: 1rem;
+  }
+}
+
+.landing-buttons .btn {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.landing-button {
+  border: none;
+  background-color: #ffcc00;
+  color: #111;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.landing-button:hover {
+  background-color: #e6b800;
+  transform: translateY(-5px);
+}
+
+.landing-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin: 10px;
+}
+
+@media (max-width: 576px) {
+  .hide-mobile {
+    display: none;
+  }
+}

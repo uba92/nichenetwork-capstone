@@ -1,0 +1,261 @@
+.col-feed-post {
+  background-color: #ddd;
+}
+
+.cover-container {
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.cover-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.sidebar-left,
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex: 1;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.img-cover-container {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cover-content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  color: #fff;
+  padding: 2rem;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.post-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.post-form-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.form-avatar {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #ddd;
+}
+
+.post-form-header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-form textarea {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  border-radius: 6px;
+  resize: none;
+}
+
+.post-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+.post-form input[type='file'] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.post-form button {
+  width: 100%;
+  margin-top: 1rem;
+  font-weight: bold;
+  background: #007bff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.post-form button:hover {
+  background: #0056b3;
+  transform: scale(1.02);
+}
+
+.leave-community-button {
+  margin-top: 1rem;
+  font-weight: bold;
+  background: #dc3545;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.suggested-members {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-member-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  transition: background 0.3s ease-in-out;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.suggested-member-item:last-child {
+  border-bottom: none;
+}
+
+.suggested-member-item:hover {
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.member-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.member-email {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  text-overflow: ellipsis;
+}
+
+.member-email-div {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar-left-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+}
+
+.sidebar-left-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.sidebar-left-avatar:hover {
+  border-color: #007bff;
+  cursor: pointer;
+}
+
+.sidebar-left-username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sidebar-left-bio {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar-left-list .list-group-item {
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  padding: 12px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar-left-list .list-group-item:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+
+.sidebar-left-list .list-group-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
