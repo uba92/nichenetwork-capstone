@@ -30,7 +30,7 @@ Axios
 
 Deploy
 
-🌐 Backend: Koyeb
+🌐 Backend: Render
 
 💻 Frontend: Netlify
 
@@ -38,7 +38,7 @@ Deploy
 
 🟢 Frontend: https://niche-network-app.netlify.app
 
-🛠 Backend API: https://renewed-philomena-nichenetwork-60e5fcc0.koyeb.app
+🛠 Backend API: https://nichenetwork-backend-1.onrender.com
 
 📂 Struttura progetto
 
